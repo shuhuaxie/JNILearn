@@ -13,6 +13,8 @@ class MainActivity : Activity() {
         // Example of a call to a native method
         sample_text_1.text = JNIMethods.methodByMapped()
         sample_text_2.text = JNIMethods.methodByRegister()
+        sample_text_3.text = JNIMethodNonStatic().methodNotStatic()
+        sample_text_4.text = JNIMethodNonStatic().methodWithTwoArgu(12,"hello")
     }
 
     /**

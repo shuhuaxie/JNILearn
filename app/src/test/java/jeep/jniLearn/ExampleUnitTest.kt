@@ -14,4 +14,21 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    val lazyValue: String by lazy {
+        println("computed!")
+        "Hello"
+    }
+//    val xx: String = (
+//        println("computed! __")
+//    )
+
+    @Test
+    fun main() {
+        println("xx")
+//        println(xx)
+//        println(lazyValue)
+        println(lazyValue)
+//        println(xx)
+    }
 }

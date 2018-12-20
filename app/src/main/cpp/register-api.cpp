@@ -1,6 +1,3 @@
-//
-// Created by jiecao——121233 on 19/12/2018.
-//
 #include <jni.h>
 #include <cstdio>
 
