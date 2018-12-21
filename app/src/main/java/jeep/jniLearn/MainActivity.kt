@@ -2,6 +2,7 @@ package jeep.jniLearn
 
 import android.app.Activity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : Activity() {
@@ -14,7 +15,9 @@ class MainActivity : Activity() {
         sample_text_1.text = JNIMethods.methodByMapped()
         sample_text_2.text = JNIMethods.methodByRegister()
         sample_text_3.text = JNIMethodNonStatic().methodNotStatic()
-        sample_text_4.text = JNIMethodNonStatic().methodWithTwoArgu(12,"hello")
+        sample_text_4.text = JNIMethodNonStatic().methodWithTwoArgu(12, "hello")
+        sample_text_5.text = JNIMethodNonStatic().methodOfC(12, "hello")
+        Log.e("xie", "ofC:" + JNIMethodNonStatic().methodOfC(12, "hello"))
     }
 
     /**
